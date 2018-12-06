@@ -14,7 +14,7 @@ One is breakable as normal ,
 and the other one is movable.
 
 
-'''c#
+```c#
 private bool CheckWall(Vector3 CheckingLocation)
     {
        
@@ -26,7 +26,7 @@ private bool CheckWall(Vector3 CheckingLocation)
                 return false;
             }
         }
-'''
+```
 
 
 
@@ -37,7 +37,7 @@ The Golden one only appears after Day 4 and it gives extra food points.
 
 
 
-'''c#
+```c#
  public void SetupScene(int level)
     {
         BoardSetup();
@@ -53,6 +53,6 @@ The Golden one only appears after Day 4 and it gives extra food points.
         
         Instantiate(Exit, new Vector3 (columns - 1, rows - 1, 0f), Quaternion.identity);
     }
-'''
+```
 
 Thank you for visiting my Git. 
