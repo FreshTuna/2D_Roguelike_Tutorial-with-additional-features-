@@ -55,4 +55,6 @@ The Golden one only appears after Day 4 and it gives extra food points.
     }
 ```
 
+I'm still working on making a restart button and a quit button after gameover.
+
 Thank you for visiting my Git. 
