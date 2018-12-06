@@ -27,6 +27,43 @@ private bool CheckWall(Vector3 CheckingLocation)
             }
         }
 ```
+```c#
+ Vector2 locationWall = gameObject.transform.position;
+
+        float x = pushingDir.x - locationWall.x;
+        float y = pushingDir.y - locationWall.y;
+
+
+        if (gameObject.transform.name == "Wall2(Clone)")
+        {
+            if (y == 0)
+            {
+                if (x > 0)
+                    if (CheckWall(locationWall - new Vector2(1, 0)))
+                        gameObject.transform.position = locationWall - new Vector2(1, 0);
+                    else
+                        gameObject.transform.position = locationWall;
+                else
+                        if (CheckWall(locationWall + new Vector2(1, 0)))
+                    gameObject.transform.position = locationWall + new Vector2(1, 0);
+                else
+                    gameObject.transform.position = locationWall;
+            }
+            else
+            {
+                if (y > 0)
+                    if (CheckWall(locationWall - new Vector2(0, 1)))
+                        gameObject.transform.position = locationWall - new Vector2(0, 1);
+                    else
+                        gameObject.transform.position = locationWall;
+                else
+                        if (CheckWall(locationWall + new Vector2(0, 1)))
+                    gameObject.transform.position = locationWall + new Vector2(0, 1);
+                else
+                    gameObject.transform.position = locationWall;
+            }
+```
+
 
 
 
