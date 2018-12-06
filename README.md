@@ -15,7 +15,7 @@ and the other one is movable.
 
 
 '''
-
+c#
 private bool CheckWall(Vector3 CheckingLocation)
     {
        
@@ -39,7 +39,7 @@ The Golden one only appears after Day 4 and it gives extra food points.
 
 
 '''
-
+c#
  public void SetupScene(int level)
     {
         BoardSetup();
